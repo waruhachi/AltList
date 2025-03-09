@@ -13,7 +13,7 @@ AltList_PUBLIC_HEADERS = ATLApplicationListControllerBase.h ATLApplicationListMu
 AltList_INSTALL_PATH = /Library/Frameworks
 AltList_CFLAGS = -fobjc-arc -Wno-tautological-pointer-compare
 ifeq ($(THEOS_PACKAGE_SCHEME),rootless)
-AltList_LDFLAGS += -fobjc-arc -install_name @rpath/AltList.framework/AltList
+AltList_LDFLAGS += -install_name @rpath/AltList.framework/AltList
 endif
 AltList_FRAMEWORKS = MobileCoreServices
 AltList_PRIVATE_FRAMEWORKS = Preferences
